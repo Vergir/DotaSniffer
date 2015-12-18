@@ -1,6 +1,9 @@
 #ifndef sniffer_h
 #define sniffer_h
 
+#include <wchar.h>
+#include <locale.h>
+#include <string.h>
 #include <stdio.h>
 #include "pcapFuncs.h"
 #include "utils.h"

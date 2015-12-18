@@ -6,8 +6,10 @@ char * FindDotaSuitableDevice(pcap_if_t * devices) {
             devices = devices->next;
         else
             break;
+    
     if (devices)
         return devices->name;
+    
     return NULL;
 }
 
@@ -18,7 +20,7 @@ void Callback(u_char * user, const struct pcap_pkthdr * header, const u_char * p
     while (*(++packet) != PROTOCOL_UDP);
     packet -= IPV4_HEADER_OFFSET_TO_PROTOCOL;
     
-    int packetLength = (packet[2] << 8) + packet[3];
+    int ipPacketLength = (packet[2] << 8) + packet[3];
     
     int ipHeaderLength = (*packet & 0x0F) << 2;
     packet += ipHeaderLength;
@@ -26,9 +28,14 @@ void Callback(u_char * user, const struct pcap_pkthdr * header, const u_char * p
     int port = (packet[2] << 8) + packet[3];
     
     packet += UDP_HEADER_LENGTH;
-    int dataLength = packetLength - ipHeaderLength - UDP_HEADER_LENGTH;
+    int dataLength = ipPacketLength - ipHeaderLength - UDP_HEADER_LENGTH;
     
     printf("Got Packet\n\
-           \r Length: %d\n\
-           \r Port: %d\n", header->len, port);
+           \r Packet Length: %d\n\
+           \r Data Length: %d\n\
+           \r Port: %d\n\
+           \r Data: \n", header->len, dataLength, port);
+    for (int i = 0; i < dataLength; i +=1)
+        putwc(packet[i], stdout);
+    puts("\n End of Data.\n");
 }

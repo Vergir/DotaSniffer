@@ -7,6 +7,6 @@
 #include <string.h>
 
 double GetTimeSince(time_t moment, double defaultValue);
-void SetupLogFile(const char * executableName);
+void RedirectErrors(const char * executableName);
 
 #endif

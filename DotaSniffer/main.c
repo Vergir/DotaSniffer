@@ -1,6 +1,4 @@
-#include <wchar.h>
-#include <locale.h>
-#include <string.h>
+
 #include "pcapFuncs.h"
 #include "utils.h"
 #include "sniffer.h"
@@ -8,9 +6,10 @@
 #define ever (;;)
 
 int main(int argc, const char * argv[]) {
-    //Commented: Errors go on screen
-    //Uncommented: Errors go in log file
-    //SetupLogFile(argv[0]);
+    //Call with NULL to supress errors
+    //Call with argv[0] to write errors to log file
+    //Do not call to print errors on screen
+    //RedirectErrors(argv[0]);
     
     pcap_if_t * devices = GetDevices();
     char * device;

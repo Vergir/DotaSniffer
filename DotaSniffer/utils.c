@@ -16,11 +16,13 @@ double GetTimeSince(time_t moment, double defaultValue) {
     return difftime(now, moment);
 }
 
-void SetupLogFile(const char * executableName) {
-    
+void RedirectErrors(const char * executableName) {
     char path[256];
-    realpath(executableName, path);
-    strcat(path, ".log");
+    
+    if ((executableName == NULL) || realpath(executableName, path))
+        strcpy(path, "/dev/null");
+    else
+        strcat(path, ".log");
     
     freopen(path, "w", stderr);
     setbuf(stderr, NULL);
