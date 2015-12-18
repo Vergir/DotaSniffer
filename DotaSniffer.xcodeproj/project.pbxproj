@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		706D78C81C1723AF009C373C /* libpcap.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 706D78C71C1723AF009C373C /* libpcap.tbd */; settings = {ATTRIBUTES = (Required, ); }; };
 		708E73961C171DDF006FF456 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 708E73951C171DDF006FF456 /* main.c */; };
+		70994B401C1C5DB7006B092A /* sniffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 70994B3E1C1C5DB7006B092A /* sniffer.c */; };
+		70A927A41C1C481A00B773B2 /* pcapFuncs.c in Sources */ = {isa = PBXBuildFile; fileRef = 70A927A21C1C481A00B773B2 /* pcapFuncs.c */; };
+		70A927A71C1C499B00B773B2 /* utils.c in Sources */ = {isa = PBXBuildFile; fileRef = 70A927A51C1C499B00B773B2 /* utils.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +27,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		706D78C71C1723AF009C373C /* libpcap.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libpcap.tbd; path = usr/lib/libpcap.tbd; sourceTree = SDKROOT; };
 		708E73921C171DDF006FF456 /* DotaSniffer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DotaSniffer; sourceTree = BUILT_PRODUCTS_DIR; };
 		708E73951C171DDF006FF456 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		70994B3E1C1C5DB7006B092A /* sniffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sniffer.c; sourceTree = "<group>"; };
+		70994B3F1C1C5DB7006B092A /* sniffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sniffer.h; sourceTree = "<group>"; };
+		70A927A21C1C481A00B773B2 /* pcapFuncs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pcapFuncs.c; sourceTree = "<group>"; };
+		70A927A31C1C481A00B773B2 /* pcapFuncs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pcapFuncs.h; sourceTree = "<group>"; };
+		70A927A51C1C499B00B773B2 /* utils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = utils.c; sourceTree = "<group>"; };
+		70A927A61C1C499B00B773B2 /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				706D78C81C1723AF009C373C /* libpcap.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +53,7 @@
 		708E73891C171DDF006FF456 = {
 			isa = PBXGroup;
 			children = (
+				706D78C71C1723AF009C373C /* libpcap.tbd */,
 				708E73941C171DDF006FF456 /* DotaSniffer */,
 				708E73931C171DDF006FF456 /* Products */,
 			);
@@ -58,6 +71,12 @@
 			isa = PBXGroup;
 			children = (
 				708E73951C171DDF006FF456 /* main.c */,
+				70A927A51C1C499B00B773B2 /* utils.c */,
+				70A927A61C1C499B00B773B2 /* utils.h */,
+				70A927A21C1C481A00B773B2 /* pcapFuncs.c */,
+				70994B3E1C1C5DB7006B092A /* sniffer.c */,
+				70994B3F1C1C5DB7006B092A /* sniffer.h */,
+				70A927A31C1C481A00B773B2 /* pcapFuncs.h */,
 			);
 			path = DotaSniffer;
 			sourceTree = "<group>";
@@ -118,7 +137,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70A927A71C1C499B00B773B2 /* utils.c in Sources */,
 				708E73961C171DDF006FF456 /* main.c in Sources */,
+				70A927A41C1C481A00B773B2 /* pcapFuncs.c in Sources */,
+				70994B401C1C5DB7006B092A /* sniffer.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +259,7 @@
 				708E739B1C171DDF006FF456 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
