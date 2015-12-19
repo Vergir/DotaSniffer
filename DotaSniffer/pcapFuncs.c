@@ -67,7 +67,7 @@ int ApplyFilter(const char * device, pcap_t * handle, const char * filterString)
 }
 
 int StartLoop(pcap_t * handle, pcap_handler callback) {
-    if (pcap_loop(handle, -1, callback, NULL)) {
+    if (pcap_loop(handle, -1, callback, handle)) {
         pcap_perror(handle, "Couldn't start sniffing: %s");
         return 1;
     }
@@ -92,7 +92,7 @@ int Test(const char * device, const char * filterString, double testTime) {
     testStart = time(NULL);
     
     while ((testStatus = pcap_next_ex(handle, &testHeader, &testPacket)) >= 0) {
-        if (testStatus == 0 && (GetTimeSince(testStart, 131.23) > testTime)) {
+        if ((testStatus == 0) && (GetTimeSince(testStart, 131.23) > testTime)) {
             pcap_close(handle);
             return 1;
         }

@@ -74,9 +74,9 @@
 				70A927A51C1C499B00B773B2 /* utils.c */,
 				70A927A61C1C499B00B773B2 /* utils.h */,
 				70A927A21C1C481A00B773B2 /* pcapFuncs.c */,
+				70A927A31C1C481A00B773B2 /* pcapFuncs.h */,
 				70994B3E1C1C5DB7006B092A /* sniffer.c */,
 				70994B3F1C1C5DB7006B092A /* sniffer.h */,
-				70A927A31C1C481A00B773B2 /* pcapFuncs.h */,
 			);
 			path = DotaSniffer;
 			sourceTree = "<group>";

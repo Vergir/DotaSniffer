@@ -11,14 +11,16 @@ int main(int argc, const char * argv[]) {
     //Do not call to print errors on screen
     //RedirectErrors(argv[0]);
     
+    SetupStdin();
+    
+    int tryTime = 8;
     pcap_if_t * devices = GetDevices();
     char * device;
     
     for ever
-        if (device = FindDotaSuitableDevice(devices))
+        if (device = TryFindDotaSuitableDevice(devices, tryTime))
             Sniff(device, PCAP_DOTA_FILTER_STRING, Callback);
         else
-            fputs("No suitable devices found. Retrying search...\n", stderr);
-    
+            fprintf(stderr, "No suitable devices found. Retrying Search with extended test time: %d.\n", tryTime *= 2);
     return(0);
 }
