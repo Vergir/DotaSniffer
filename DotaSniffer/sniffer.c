@@ -1,5 +1,7 @@
 #include "sniffer.h"
 
+char exitKey;
+
 char * TryFindDotaSuitableDevice(pcap_if_t * devices, int testTime) {
     while (devices)
         if (Test(devices->name, PCAP_DOTA_FILTER_STRING, testTime))
@@ -18,7 +20,7 @@ void CheckForUserInput(void * user) {
     char key;
     
     //Assumes stdin is read in non-bloking mode.
-    if (read(STDIN_FD, &key, sizeof(key) > 0) && (key == EXIT_KEY)) {
+    if (read(STDIN_FD, &key, sizeof(key) > 0) && (key == exitKey)) {
         if (user)
             pcapHandle = (pcap_t *)user;
         else {
@@ -26,7 +28,8 @@ void CheckForUserInput(void * user) {
             exit(1);
         }
         pcap_breakloop(pcapHandle);
-        CloseSniffer(pcapHandle);
+        //CloseSniffer(pcapHandle);
+        exitKey = 0;
     }
 }
 
@@ -57,17 +60,17 @@ DotaPacket ParseDotaPacket(const struct pcap_pkthdr * header, const u_char * pac
     return dp;
 }
 
-void WriteDotaPacket(DotaPacket packet, FILE * fd, int includeData) {
+void WriteDotaPacket(DotaPacket packet, FILE * fd, DataInclusion includeData) {
     char * timeStamp = TimeToString(packet.timeStamp, packet.microSeconds);
     
     fprintf(fd, "\nDotaPacket\n\
-            \r Time: %s\n\
-            \r Packet Length: %d\n\
-            \r DataLength: %d\n\
-            \r Port: %d\n",
+            Time: %s\n\
+            Packet Length: %d\n\
+            DataLength: %d\n\
+            Port: %d\n",
             timeStamp, packet.packetLegnth, packet.dataLength, packet.port);
     
-    if (includeData) {
+    if (includeData == IncludeData) {
         fputs(" Data Start\n", fd);
         for (int i = 0; i < packet.dataLength; i += 1)
             fputwc(packet.data[i], fd);
@@ -80,5 +83,5 @@ void Callback(u_char * user, const struct pcap_pkthdr * header, const u_char * p
     
     DotaPacket dp = ParseDotaPacket(header, packet);
     
-    WriteDotaPacket(dp, stdout, INCLUDE_DATA_YES);
+    WriteDotaPacket(dp, stdout, IncludeData);
 }

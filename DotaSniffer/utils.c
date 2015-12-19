@@ -32,23 +32,39 @@ char * TimeToString(time_t time, suseconds_t microSeconds) {
     return timeStampString;
 }
 
-
-void RedirectErrors(const char * executableName) {
+void ConfigureStreams(const char * argv0, ErrorOutput eo, ProgramOutput po) {
     char path[256];
-    
-    if ((executableName == NULL) || realpath(executableName, path))
-        strcpy(path, "/dev/null");
-    else
-        strcat(path, "_errors.log");
-    
-    freopen(path, "w", stderr);
+    //Configure stderr
     setbuf(stderr, NULL);
-    return;
-}
-
-void SetupStdin() {
+    switch (eo) {
+        case SupressErrors:
+            strcpy(path, "/dev/null");
+            freopen(path, "w", stderr);
+            break;
+        case ErrorsToFile:
+            realpath(argv0, path);
+            strcat(path, "_errors.log");
+            freopen(path, "w", stderr);
+            break;
+        default:
+            break;
+    }
+    //Configure stdout
+    switch (po) {
+        case SupressErrors:
+            strcpy(path, "/dev/null");
+            freopen(path, "w", stdout);
+            break;
+        case ErrorsToFile:
+            realpath(argv0, path);
+            strcat(path, "_output.log");
+            freopen(path, "w", stdout);
+            break;
+        default:
+            break;
+    }
+    //Configure stdin
     setbuf(stdin, NULL);
-    
     int flags = fcntl(STDIN_FD, F_GETFL, 0);
     if(fcntl(STDIN_FD, F_SETFL, flags | O_NONBLOCK))
         fputs("Could not set stdin to non-blocking mode\n", stderr);

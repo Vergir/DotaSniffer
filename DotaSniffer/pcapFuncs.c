@@ -68,7 +68,7 @@ int ApplyFilter(const char * device, pcap_t * handle, const char * filterString)
 
 int StartLoop(pcap_t * handle, pcap_handler callback) {
     if (pcap_loop(handle, -1, callback, handle)) {
-        pcap_perror(handle, "Couldn't start sniffing: %s");
+        pcap_perror(handle, "Not sniffing. ");
         return 1;
     }
     
