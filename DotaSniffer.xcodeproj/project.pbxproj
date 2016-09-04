@@ -12,6 +12,50 @@
 		70994B401C1C5DB7006B092A /* sniffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 70994B3E1C1C5DB7006B092A /* sniffer.c */; };
 		70A927A41C1C481A00B773B2 /* pcapFuncs.c in Sources */ = {isa = PBXBuildFile; fileRef = 70A927A21C1C481A00B773B2 /* pcapFuncs.c */; };
 		70A927A71C1C499B00B773B2 /* utils.c in Sources */ = {isa = PBXBuildFile; fileRef = 70A927A51C1C499B00B773B2 /* utils.c */; };
+		70F6AF501D7CA95F004DCA38 /* base_gcmessages.pb-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 70F6AEF61D7CA95F004DCA38 /* base_gcmessages.pb-c.c */; };
+		70F6AF511D7CA95F004DCA38 /* c_peer2peer_netmessages.pb-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 70F6AEF81D7CA95F004DCA38 /* c_peer2peer_netmessages.pb-c.c */; };
+		70F6AF521D7CA95F004DCA38 /* clientmessages.pb-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 70F6AEFA1D7CA95F004DCA38 /* clientmessages.pb-c.c */; };
+		70F6AF531D7CA95F004DCA38 /* connectionless_netmessages.pb-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 70F6AEFC1D7CA95F004DCA38 /* connectionless_netmessages.pb-c.c */; };
+		70F6AF541D7CA95F004DCA38 /* demo.pb-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 70F6AEFE1D7CA95F004DCA38 /* demo.pb-c.c */; };
+		70F6AF551D7CA95F004DCA38 /* descriptor.pb-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 70F6AF001D7CA95F004DCA38 /* descriptor.pb-c.c */; };
+		70F6AF561D7CA95F004DCA38 /* dota_broadcastmessages.pb-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 70F6AF021D7CA95F004DCA38 /* dota_broadcastmessages.pb-c.c */; };
+		70F6AF571D7CA95F004DCA38 /* dota_client_enums.pb-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 70F6AF041D7CA95F004DCA38 /* dota_client_enums.pb-c.c */; };
+		70F6AF581D7CA95F004DCA38 /* dota_clientmessages.pb-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 70F6AF061D7CA95F004DCA38 /* dota_clientmessages.pb-c.c */; };
+		70F6AF591D7CA95F004DCA38 /* dota_commonmessages.pb-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 70F6AF081D7CA95F004DCA38 /* dota_commonmessages.pb-c.c */; };
+		70F6AF5A1D7CA95F004DCA38 /* dota_gcmessages_client_chat.pb-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 70F6AF0A1D7CA95F004DCA38 /* dota_gcmessages_client_chat.pb-c.c */; };
+		70F6AF5B1D7CA95F004DCA38 /* dota_gcmessages_client_fantasy.pb-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 70F6AF0C1D7CA95F004DCA38 /* dota_gcmessages_client_fantasy.pb-c.c */; };
+		70F6AF5C1D7CA95F004DCA38 /* dota_gcmessages_client_guild.pb-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 70F6AF0E1D7CA95F004DCA38 /* dota_gcmessages_client_guild.pb-c.c */; };
+		70F6AF5D1D7CA95F004DCA38 /* dota_gcmessages_client_match_management.pb-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 70F6AF101D7CA95F004DCA38 /* dota_gcmessages_client_match_management.pb-c.c */; };
+		70F6AF5E1D7CA95F004DCA38 /* dota_gcmessages_client_team.pb-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 70F6AF121D7CA95F004DCA38 /* dota_gcmessages_client_team.pb-c.c */; };
+		70F6AF5F1D7CA95F004DCA38 /* dota_gcmessages_client_tournament.pb-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 70F6AF141D7CA95F004DCA38 /* dota_gcmessages_client_tournament.pb-c.c */; };
+		70F6AF601D7CA95F004DCA38 /* dota_gcmessages_client_watch.pb-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 70F6AF161D7CA95F004DCA38 /* dota_gcmessages_client_watch.pb-c.c */; };
+		70F6AF611D7CA95F004DCA38 /* dota_gcmessages_client.pb-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 70F6AF181D7CA95F004DCA38 /* dota_gcmessages_client.pb-c.c */; };
+		70F6AF621D7CA95F004DCA38 /* dota_gcmessages_common_match_management.pb-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 70F6AF1A1D7CA95F004DCA38 /* dota_gcmessages_common_match_management.pb-c.c */; };
+		70F6AF631D7CA95F004DCA38 /* dota_gcmessages_common.pb-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 70F6AF1C1D7CA95F004DCA38 /* dota_gcmessages_common.pb-c.c */; };
+		70F6AF641D7CA95F004DCA38 /* dota_gcmessages_msgid.pb-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 70F6AF1E1D7CA95F004DCA38 /* dota_gcmessages_msgid.pb-c.c */; };
+		70F6AF651D7CA95F004DCA38 /* dota_gcmessages_server.pb-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 70F6AF201D7CA95F004DCA38 /* dota_gcmessages_server.pb-c.c */; };
+		70F6AF661D7CA95F004DCA38 /* dota_match_metadata.pb-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 70F6AF221D7CA95F004DCA38 /* dota_match_metadata.pb-c.c */; };
+		70F6AF671D7CA95F004DCA38 /* dota_modifiers.pb-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 70F6AF241D7CA95F004DCA38 /* dota_modifiers.pb-c.c */; };
+		70F6AF681D7CA95F004DCA38 /* dota_shared_enums.pb-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 70F6AF261D7CA95F004DCA38 /* dota_shared_enums.pb-c.c */; };
+		70F6AF691D7CA95F004DCA38 /* dota_usermessages.pb-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 70F6AF281D7CA95F004DCA38 /* dota_usermessages.pb-c.c */; };
+		70F6AF6A1D7CA95F004DCA38 /* econ_gcmessages.pb-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 70F6AF2A1D7CA95F004DCA38 /* econ_gcmessages.pb-c.c */; };
+		70F6AF6B1D7CA95F004DCA38 /* econ_shared_enums.pb-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 70F6AF2C1D7CA95F004DCA38 /* econ_shared_enums.pb-c.c */; };
+		70F6AF6C1D7CA95F004DCA38 /* gameevents.pb-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 70F6AF2E1D7CA95F004DCA38 /* gameevents.pb-c.c */; };
+		70F6AF6D1D7CA95F004DCA38 /* gametoolevents.pb-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 70F6AF301D7CA95F004DCA38 /* gametoolevents.pb-c.c */; };
+		70F6AF6E1D7CA95F004DCA38 /* gcsdk_gcmessages.pb-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 70F6AF321D7CA95F004DCA38 /* gcsdk_gcmessages.pb-c.c */; };
+		70F6AF6F1D7CA95F004DCA38 /* gcsystemmsgs.pb-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 70F6AF341D7CA95F004DCA38 /* gcsystemmsgs.pb-c.c */; };
+		70F6AF701D7CA95F004DCA38 /* netmessages.pb-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 70F6AF361D7CA95F004DCA38 /* netmessages.pb-c.c */; };
+		70F6AF711D7CA95F004DCA38 /* network_connection.pb-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 70F6AF381D7CA95F004DCA38 /* network_connection.pb-c.c */; };
+		70F6AF721D7CA95F004DCA38 /* networkbasetypes.pb-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 70F6AF3A1D7CA95F004DCA38 /* networkbasetypes.pb-c.c */; };
+		70F6AF731D7CA95F004DCA38 /* networksystem_protomessages.pb-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 70F6AF3C1D7CA95F004DCA38 /* networksystem_protomessages.pb-c.c */; };
+		70F6AF751D7CA95F004DCA38 /* steamdatagram_messages.pb-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 70F6AF401D7CA95F004DCA38 /* steamdatagram_messages.pb-c.c */; };
+		70F6AF761D7CA95F004DCA38 /* steammessages_cloud.steamworkssdk.pb-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 70F6AF421D7CA95F004DCA38 /* steammessages_cloud.steamworkssdk.pb-c.c */; };
+		70F6AF771D7CA95F004DCA38 /* steammessages_oauth.steamworkssdk.pb-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 70F6AF441D7CA95F004DCA38 /* steammessages_oauth.steamworkssdk.pb-c.c */; };
+		70F6AF781D7CA95F004DCA38 /* steammessages_publishedfile.steamworkssdk.pb-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 70F6AF461D7CA95F004DCA38 /* steammessages_publishedfile.steamworkssdk.pb-c.c */; };
+		70F6AF791D7CA95F004DCA38 /* steammessages_unified_base.steamworkssdk.pb-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 70F6AF481D7CA95F004DCA38 /* steammessages_unified_base.steamworkssdk.pb-c.c */; };
+		70F6AF7A1D7CA95F004DCA38 /* steammessages.pb-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 70F6AF4A1D7CA95F004DCA38 /* steammessages.pb-c.c */; };
+		70F6AF7C1D7CA95F004DCA38 /* usermessages.pb-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 70F6AF4E1D7CA95F004DCA38 /* usermessages.pb-c.c */; };
+		70F6AF821D7CAB5B004DCA38 /* protobuf-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 70F6AF801D7CAB5B004DCA38 /* protobuf-c.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,6 +80,94 @@
 		70A927A31C1C481A00B773B2 /* pcapFuncs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pcapFuncs.h; sourceTree = "<group>"; };
 		70A927A51C1C499B00B773B2 /* utils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = utils.c; sourceTree = "<group>"; };
 		70A927A61C1C499B00B773B2 /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+		70F6AEF61D7CA95F004DCA38 /* base_gcmessages.pb-c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "base_gcmessages.pb-c.c"; path = "protos/base_gcmessages.pb-c.c"; sourceTree = "<group>"; };
+		70F6AEF71D7CA95F004DCA38 /* base_gcmessages.pb-c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "base_gcmessages.pb-c.h"; path = "protos/base_gcmessages.pb-c.h"; sourceTree = "<group>"; };
+		70F6AEF81D7CA95F004DCA38 /* c_peer2peer_netmessages.pb-c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "c_peer2peer_netmessages.pb-c.c"; path = "protos/c_peer2peer_netmessages.pb-c.c"; sourceTree = "<group>"; };
+		70F6AEF91D7CA95F004DCA38 /* c_peer2peer_netmessages.pb-c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "c_peer2peer_netmessages.pb-c.h"; path = "protos/c_peer2peer_netmessages.pb-c.h"; sourceTree = "<group>"; };
+		70F6AEFA1D7CA95F004DCA38 /* clientmessages.pb-c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "clientmessages.pb-c.c"; path = "protos/clientmessages.pb-c.c"; sourceTree = "<group>"; };
+		70F6AEFB1D7CA95F004DCA38 /* clientmessages.pb-c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "clientmessages.pb-c.h"; path = "protos/clientmessages.pb-c.h"; sourceTree = "<group>"; };
+		70F6AEFC1D7CA95F004DCA38 /* connectionless_netmessages.pb-c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "connectionless_netmessages.pb-c.c"; path = "protos/connectionless_netmessages.pb-c.c"; sourceTree = "<group>"; };
+		70F6AEFD1D7CA95F004DCA38 /* connectionless_netmessages.pb-c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "connectionless_netmessages.pb-c.h"; path = "protos/connectionless_netmessages.pb-c.h"; sourceTree = "<group>"; };
+		70F6AEFE1D7CA95F004DCA38 /* demo.pb-c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "demo.pb-c.c"; path = "protos/demo.pb-c.c"; sourceTree = "<group>"; };
+		70F6AEFF1D7CA95F004DCA38 /* demo.pb-c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "demo.pb-c.h"; path = "protos/demo.pb-c.h"; sourceTree = "<group>"; };
+		70F6AF001D7CA95F004DCA38 /* descriptor.pb-c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "descriptor.pb-c.c"; path = "protos/descriptor.pb-c.c"; sourceTree = "<group>"; };
+		70F6AF011D7CA95F004DCA38 /* descriptor.pb-c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "descriptor.pb-c.h"; path = "protos/descriptor.pb-c.h"; sourceTree = "<group>"; };
+		70F6AF021D7CA95F004DCA38 /* dota_broadcastmessages.pb-c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "dota_broadcastmessages.pb-c.c"; path = "protos/dota_broadcastmessages.pb-c.c"; sourceTree = "<group>"; };
+		70F6AF031D7CA95F004DCA38 /* dota_broadcastmessages.pb-c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "dota_broadcastmessages.pb-c.h"; path = "protos/dota_broadcastmessages.pb-c.h"; sourceTree = "<group>"; };
+		70F6AF041D7CA95F004DCA38 /* dota_client_enums.pb-c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "dota_client_enums.pb-c.c"; path = "protos/dota_client_enums.pb-c.c"; sourceTree = "<group>"; };
+		70F6AF051D7CA95F004DCA38 /* dota_client_enums.pb-c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "dota_client_enums.pb-c.h"; path = "protos/dota_client_enums.pb-c.h"; sourceTree = "<group>"; };
+		70F6AF061D7CA95F004DCA38 /* dota_clientmessages.pb-c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "dota_clientmessages.pb-c.c"; path = "protos/dota_clientmessages.pb-c.c"; sourceTree = "<group>"; };
+		70F6AF071D7CA95F004DCA38 /* dota_clientmessages.pb-c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "dota_clientmessages.pb-c.h"; path = "protos/dota_clientmessages.pb-c.h"; sourceTree = "<group>"; };
+		70F6AF081D7CA95F004DCA38 /* dota_commonmessages.pb-c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "dota_commonmessages.pb-c.c"; path = "protos/dota_commonmessages.pb-c.c"; sourceTree = "<group>"; };
+		70F6AF091D7CA95F004DCA38 /* dota_commonmessages.pb-c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "dota_commonmessages.pb-c.h"; path = "protos/dota_commonmessages.pb-c.h"; sourceTree = "<group>"; };
+		70F6AF0A1D7CA95F004DCA38 /* dota_gcmessages_client_chat.pb-c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "dota_gcmessages_client_chat.pb-c.c"; path = "protos/dota_gcmessages_client_chat.pb-c.c"; sourceTree = "<group>"; };
+		70F6AF0B1D7CA95F004DCA38 /* dota_gcmessages_client_chat.pb-c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "dota_gcmessages_client_chat.pb-c.h"; path = "protos/dota_gcmessages_client_chat.pb-c.h"; sourceTree = "<group>"; };
+		70F6AF0C1D7CA95F004DCA38 /* dota_gcmessages_client_fantasy.pb-c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "dota_gcmessages_client_fantasy.pb-c.c"; path = "protos/dota_gcmessages_client_fantasy.pb-c.c"; sourceTree = "<group>"; };
+		70F6AF0D1D7CA95F004DCA38 /* dota_gcmessages_client_fantasy.pb-c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "dota_gcmessages_client_fantasy.pb-c.h"; path = "protos/dota_gcmessages_client_fantasy.pb-c.h"; sourceTree = "<group>"; };
+		70F6AF0E1D7CA95F004DCA38 /* dota_gcmessages_client_guild.pb-c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "dota_gcmessages_client_guild.pb-c.c"; path = "protos/dota_gcmessages_client_guild.pb-c.c"; sourceTree = "<group>"; };
+		70F6AF0F1D7CA95F004DCA38 /* dota_gcmessages_client_guild.pb-c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "dota_gcmessages_client_guild.pb-c.h"; path = "protos/dota_gcmessages_client_guild.pb-c.h"; sourceTree = "<group>"; };
+		70F6AF101D7CA95F004DCA38 /* dota_gcmessages_client_match_management.pb-c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "dota_gcmessages_client_match_management.pb-c.c"; path = "protos/dota_gcmessages_client_match_management.pb-c.c"; sourceTree = "<group>"; };
+		70F6AF111D7CA95F004DCA38 /* dota_gcmessages_client_match_management.pb-c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "dota_gcmessages_client_match_management.pb-c.h"; path = "protos/dota_gcmessages_client_match_management.pb-c.h"; sourceTree = "<group>"; };
+		70F6AF121D7CA95F004DCA38 /* dota_gcmessages_client_team.pb-c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "dota_gcmessages_client_team.pb-c.c"; path = "protos/dota_gcmessages_client_team.pb-c.c"; sourceTree = "<group>"; };
+		70F6AF131D7CA95F004DCA38 /* dota_gcmessages_client_team.pb-c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "dota_gcmessages_client_team.pb-c.h"; path = "protos/dota_gcmessages_client_team.pb-c.h"; sourceTree = "<group>"; };
+		70F6AF141D7CA95F004DCA38 /* dota_gcmessages_client_tournament.pb-c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "dota_gcmessages_client_tournament.pb-c.c"; path = "protos/dota_gcmessages_client_tournament.pb-c.c"; sourceTree = "<group>"; };
+		70F6AF151D7CA95F004DCA38 /* dota_gcmessages_client_tournament.pb-c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "dota_gcmessages_client_tournament.pb-c.h"; path = "protos/dota_gcmessages_client_tournament.pb-c.h"; sourceTree = "<group>"; };
+		70F6AF161D7CA95F004DCA38 /* dota_gcmessages_client_watch.pb-c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "dota_gcmessages_client_watch.pb-c.c"; path = "protos/dota_gcmessages_client_watch.pb-c.c"; sourceTree = "<group>"; };
+		70F6AF171D7CA95F004DCA38 /* dota_gcmessages_client_watch.pb-c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "dota_gcmessages_client_watch.pb-c.h"; path = "protos/dota_gcmessages_client_watch.pb-c.h"; sourceTree = "<group>"; };
+		70F6AF181D7CA95F004DCA38 /* dota_gcmessages_client.pb-c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "dota_gcmessages_client.pb-c.c"; path = "protos/dota_gcmessages_client.pb-c.c"; sourceTree = "<group>"; };
+		70F6AF191D7CA95F004DCA38 /* dota_gcmessages_client.pb-c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "dota_gcmessages_client.pb-c.h"; path = "protos/dota_gcmessages_client.pb-c.h"; sourceTree = "<group>"; };
+		70F6AF1A1D7CA95F004DCA38 /* dota_gcmessages_common_match_management.pb-c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "dota_gcmessages_common_match_management.pb-c.c"; path = "protos/dota_gcmessages_common_match_management.pb-c.c"; sourceTree = "<group>"; };
+		70F6AF1B1D7CA95F004DCA38 /* dota_gcmessages_common_match_management.pb-c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "dota_gcmessages_common_match_management.pb-c.h"; path = "protos/dota_gcmessages_common_match_management.pb-c.h"; sourceTree = "<group>"; };
+		70F6AF1C1D7CA95F004DCA38 /* dota_gcmessages_common.pb-c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "dota_gcmessages_common.pb-c.c"; path = "protos/dota_gcmessages_common.pb-c.c"; sourceTree = "<group>"; };
+		70F6AF1D1D7CA95F004DCA38 /* dota_gcmessages_common.pb-c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "dota_gcmessages_common.pb-c.h"; path = "protos/dota_gcmessages_common.pb-c.h"; sourceTree = "<group>"; };
+		70F6AF1E1D7CA95F004DCA38 /* dota_gcmessages_msgid.pb-c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "dota_gcmessages_msgid.pb-c.c"; path = "protos/dota_gcmessages_msgid.pb-c.c"; sourceTree = "<group>"; };
+		70F6AF1F1D7CA95F004DCA38 /* dota_gcmessages_msgid.pb-c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "dota_gcmessages_msgid.pb-c.h"; path = "protos/dota_gcmessages_msgid.pb-c.h"; sourceTree = "<group>"; };
+		70F6AF201D7CA95F004DCA38 /* dota_gcmessages_server.pb-c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "dota_gcmessages_server.pb-c.c"; path = "protos/dota_gcmessages_server.pb-c.c"; sourceTree = "<group>"; };
+		70F6AF211D7CA95F004DCA38 /* dota_gcmessages_server.pb-c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "dota_gcmessages_server.pb-c.h"; path = "protos/dota_gcmessages_server.pb-c.h"; sourceTree = "<group>"; };
+		70F6AF221D7CA95F004DCA38 /* dota_match_metadata.pb-c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "dota_match_metadata.pb-c.c"; path = "protos/dota_match_metadata.pb-c.c"; sourceTree = "<group>"; };
+		70F6AF231D7CA95F004DCA38 /* dota_match_metadata.pb-c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "dota_match_metadata.pb-c.h"; path = "protos/dota_match_metadata.pb-c.h"; sourceTree = "<group>"; };
+		70F6AF241D7CA95F004DCA38 /* dota_modifiers.pb-c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "dota_modifiers.pb-c.c"; path = "protos/dota_modifiers.pb-c.c"; sourceTree = "<group>"; };
+		70F6AF251D7CA95F004DCA38 /* dota_modifiers.pb-c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "dota_modifiers.pb-c.h"; path = "protos/dota_modifiers.pb-c.h"; sourceTree = "<group>"; };
+		70F6AF261D7CA95F004DCA38 /* dota_shared_enums.pb-c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "dota_shared_enums.pb-c.c"; path = "protos/dota_shared_enums.pb-c.c"; sourceTree = "<group>"; };
+		70F6AF271D7CA95F004DCA38 /* dota_shared_enums.pb-c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "dota_shared_enums.pb-c.h"; path = "protos/dota_shared_enums.pb-c.h"; sourceTree = "<group>"; };
+		70F6AF281D7CA95F004DCA38 /* dota_usermessages.pb-c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "dota_usermessages.pb-c.c"; path = "protos/dota_usermessages.pb-c.c"; sourceTree = "<group>"; };
+		70F6AF291D7CA95F004DCA38 /* dota_usermessages.pb-c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "dota_usermessages.pb-c.h"; path = "protos/dota_usermessages.pb-c.h"; sourceTree = "<group>"; };
+		70F6AF2A1D7CA95F004DCA38 /* econ_gcmessages.pb-c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "econ_gcmessages.pb-c.c"; path = "protos/econ_gcmessages.pb-c.c"; sourceTree = "<group>"; };
+		70F6AF2B1D7CA95F004DCA38 /* econ_gcmessages.pb-c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "econ_gcmessages.pb-c.h"; path = "protos/econ_gcmessages.pb-c.h"; sourceTree = "<group>"; };
+		70F6AF2C1D7CA95F004DCA38 /* econ_shared_enums.pb-c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "econ_shared_enums.pb-c.c"; path = "protos/econ_shared_enums.pb-c.c"; sourceTree = "<group>"; };
+		70F6AF2D1D7CA95F004DCA38 /* econ_shared_enums.pb-c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "econ_shared_enums.pb-c.h"; path = "protos/econ_shared_enums.pb-c.h"; sourceTree = "<group>"; };
+		70F6AF2E1D7CA95F004DCA38 /* gameevents.pb-c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "gameevents.pb-c.c"; path = "protos/gameevents.pb-c.c"; sourceTree = "<group>"; };
+		70F6AF2F1D7CA95F004DCA38 /* gameevents.pb-c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "gameevents.pb-c.h"; path = "protos/gameevents.pb-c.h"; sourceTree = "<group>"; };
+		70F6AF301D7CA95F004DCA38 /* gametoolevents.pb-c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "gametoolevents.pb-c.c"; path = "protos/gametoolevents.pb-c.c"; sourceTree = "<group>"; };
+		70F6AF311D7CA95F004DCA38 /* gametoolevents.pb-c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "gametoolevents.pb-c.h"; path = "protos/gametoolevents.pb-c.h"; sourceTree = "<group>"; };
+		70F6AF321D7CA95F004DCA38 /* gcsdk_gcmessages.pb-c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "gcsdk_gcmessages.pb-c.c"; path = "protos/gcsdk_gcmessages.pb-c.c"; sourceTree = "<group>"; };
+		70F6AF331D7CA95F004DCA38 /* gcsdk_gcmessages.pb-c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "gcsdk_gcmessages.pb-c.h"; path = "protos/gcsdk_gcmessages.pb-c.h"; sourceTree = "<group>"; };
+		70F6AF341D7CA95F004DCA38 /* gcsystemmsgs.pb-c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "gcsystemmsgs.pb-c.c"; path = "protos/gcsystemmsgs.pb-c.c"; sourceTree = "<group>"; };
+		70F6AF351D7CA95F004DCA38 /* gcsystemmsgs.pb-c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "gcsystemmsgs.pb-c.h"; path = "protos/gcsystemmsgs.pb-c.h"; sourceTree = "<group>"; };
+		70F6AF361D7CA95F004DCA38 /* netmessages.pb-c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "netmessages.pb-c.c"; path = "protos/netmessages.pb-c.c"; sourceTree = "<group>"; };
+		70F6AF371D7CA95F004DCA38 /* netmessages.pb-c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "netmessages.pb-c.h"; path = "protos/netmessages.pb-c.h"; sourceTree = "<group>"; };
+		70F6AF381D7CA95F004DCA38 /* network_connection.pb-c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "network_connection.pb-c.c"; path = "protos/network_connection.pb-c.c"; sourceTree = "<group>"; };
+		70F6AF391D7CA95F004DCA38 /* network_connection.pb-c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "network_connection.pb-c.h"; path = "protos/network_connection.pb-c.h"; sourceTree = "<group>"; };
+		70F6AF3A1D7CA95F004DCA38 /* networkbasetypes.pb-c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "networkbasetypes.pb-c.c"; path = "protos/networkbasetypes.pb-c.c"; sourceTree = "<group>"; };
+		70F6AF3B1D7CA95F004DCA38 /* networkbasetypes.pb-c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "networkbasetypes.pb-c.h"; path = "protos/networkbasetypes.pb-c.h"; sourceTree = "<group>"; };
+		70F6AF3C1D7CA95F004DCA38 /* networksystem_protomessages.pb-c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "networksystem_protomessages.pb-c.c"; path = "protos/networksystem_protomessages.pb-c.c"; sourceTree = "<group>"; };
+		70F6AF3D1D7CA95F004DCA38 /* networksystem_protomessages.pb-c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "networksystem_protomessages.pb-c.h"; path = "protos/networksystem_protomessages.pb-c.h"; sourceTree = "<group>"; };
+		70F6AF401D7CA95F004DCA38 /* steamdatagram_messages.pb-c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "steamdatagram_messages.pb-c.c"; path = "protos/steamdatagram_messages.pb-c.c"; sourceTree = "<group>"; };
+		70F6AF411D7CA95F004DCA38 /* steamdatagram_messages.pb-c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "steamdatagram_messages.pb-c.h"; path = "protos/steamdatagram_messages.pb-c.h"; sourceTree = "<group>"; };
+		70F6AF421D7CA95F004DCA38 /* steammessages_cloud.steamworkssdk.pb-c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "steammessages_cloud.steamworkssdk.pb-c.c"; path = "protos/steammessages_cloud.steamworkssdk.pb-c.c"; sourceTree = "<group>"; };
+		70F6AF431D7CA95F004DCA38 /* steammessages_cloud.steamworkssdk.pb-c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "steammessages_cloud.steamworkssdk.pb-c.h"; path = "protos/steammessages_cloud.steamworkssdk.pb-c.h"; sourceTree = "<group>"; };
+		70F6AF441D7CA95F004DCA38 /* steammessages_oauth.steamworkssdk.pb-c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "steammessages_oauth.steamworkssdk.pb-c.c"; path = "protos/steammessages_oauth.steamworkssdk.pb-c.c"; sourceTree = "<group>"; };
+		70F6AF451D7CA95F004DCA38 /* steammessages_oauth.steamworkssdk.pb-c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "steammessages_oauth.steamworkssdk.pb-c.h"; path = "protos/steammessages_oauth.steamworkssdk.pb-c.h"; sourceTree = "<group>"; };
+		70F6AF461D7CA95F004DCA38 /* steammessages_publishedfile.steamworkssdk.pb-c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "steammessages_publishedfile.steamworkssdk.pb-c.c"; path = "protos/steammessages_publishedfile.steamworkssdk.pb-c.c"; sourceTree = "<group>"; };
+		70F6AF471D7CA95F004DCA38 /* steammessages_publishedfile.steamworkssdk.pb-c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "steammessages_publishedfile.steamworkssdk.pb-c.h"; path = "protos/steammessages_publishedfile.steamworkssdk.pb-c.h"; sourceTree = "<group>"; };
+		70F6AF481D7CA95F004DCA38 /* steammessages_unified_base.steamworkssdk.pb-c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "steammessages_unified_base.steamworkssdk.pb-c.c"; path = "protos/steammessages_unified_base.steamworkssdk.pb-c.c"; sourceTree = "<group>"; };
+		70F6AF491D7CA95F004DCA38 /* steammessages_unified_base.steamworkssdk.pb-c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "steammessages_unified_base.steamworkssdk.pb-c.h"; path = "protos/steammessages_unified_base.steamworkssdk.pb-c.h"; sourceTree = "<group>"; };
+		70F6AF4A1D7CA95F004DCA38 /* steammessages.pb-c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "steammessages.pb-c.c"; path = "protos/steammessages.pb-c.c"; sourceTree = "<group>"; };
+		70F6AF4B1D7CA95F004DCA38 /* steammessages.pb-c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "steammessages.pb-c.h"; path = "protos/steammessages.pb-c.h"; sourceTree = "<group>"; };
+		70F6AF4E1D7CA95F004DCA38 /* usermessages.pb-c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "usermessages.pb-c.c"; path = "protos/usermessages.pb-c.c"; sourceTree = "<group>"; };
+		70F6AF4F1D7CA95F004DCA38 /* usermessages.pb-c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "usermessages.pb-c.h"; path = "protos/usermessages.pb-c.h"; sourceTree = "<group>"; };
+		70F6AF801D7CAB5B004DCA38 /* protobuf-c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "protobuf-c.c"; path = "protos/protobuf-c.c"; sourceTree = "<group>"; };
+		70F6AF811D7CAB5B004DCA38 /* protobuf-c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "protobuf-c.h"; path = "protos/protobuf-c.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,15 +202,135 @@
 		708E73941C171DDF006FF456 /* DotaSniffer */ = {
 			isa = PBXGroup;
 			children = (
+				70F6AEF51D7CA954004DCA38 /* protos */,
+				70F6AE641D7CA333004DCA38 /* Utilites */,
 				708E73951C171DDF006FF456 /* main.c */,
+				70F6AE651D7CA357004DCA38 /* pcap Wrappers */,
+				70F6AE661D7CA363004DCA38 /* Dota-Sniffer exclusive code */,
+			);
+			path = DotaSniffer;
+			sourceTree = "<group>";
+		};
+		70F6AE641D7CA333004DCA38 /* Utilites */ = {
+			isa = PBXGroup;
+			children = (
 				70A927A51C1C499B00B773B2 /* utils.c */,
 				70A927A61C1C499B00B773B2 /* utils.h */,
+			);
+			name = Utilites;
+			sourceTree = "<group>";
+		};
+		70F6AE651D7CA357004DCA38 /* pcap Wrappers */ = {
+			isa = PBXGroup;
+			children = (
 				70A927A21C1C481A00B773B2 /* pcapFuncs.c */,
 				70A927A31C1C481A00B773B2 /* pcapFuncs.h */,
+			);
+			name = "pcap Wrappers";
+			sourceTree = "<group>";
+		};
+		70F6AE661D7CA363004DCA38 /* Dota-Sniffer exclusive code */ = {
+			isa = PBXGroup;
+			children = (
 				70994B3E1C1C5DB7006B092A /* sniffer.c */,
 				70994B3F1C1C5DB7006B092A /* sniffer.h */,
 			);
-			path = DotaSniffer;
+			name = "Dota-Sniffer exclusive code";
+			sourceTree = "<group>";
+		};
+		70F6AEF51D7CA954004DCA38 /* protos */ = {
+			isa = PBXGroup;
+			children = (
+				70F6AF801D7CAB5B004DCA38 /* protobuf-c.c */,
+				70F6AF811D7CAB5B004DCA38 /* protobuf-c.h */,
+				70F6AEF61D7CA95F004DCA38 /* base_gcmessages.pb-c.c */,
+				70F6AEF71D7CA95F004DCA38 /* base_gcmessages.pb-c.h */,
+				70F6AEF81D7CA95F004DCA38 /* c_peer2peer_netmessages.pb-c.c */,
+				70F6AEF91D7CA95F004DCA38 /* c_peer2peer_netmessages.pb-c.h */,
+				70F6AEFA1D7CA95F004DCA38 /* clientmessages.pb-c.c */,
+				70F6AEFB1D7CA95F004DCA38 /* clientmessages.pb-c.h */,
+				70F6AEFC1D7CA95F004DCA38 /* connectionless_netmessages.pb-c.c */,
+				70F6AEFD1D7CA95F004DCA38 /* connectionless_netmessages.pb-c.h */,
+				70F6AEFE1D7CA95F004DCA38 /* demo.pb-c.c */,
+				70F6AEFF1D7CA95F004DCA38 /* demo.pb-c.h */,
+				70F6AF001D7CA95F004DCA38 /* descriptor.pb-c.c */,
+				70F6AF011D7CA95F004DCA38 /* descriptor.pb-c.h */,
+				70F6AF021D7CA95F004DCA38 /* dota_broadcastmessages.pb-c.c */,
+				70F6AF031D7CA95F004DCA38 /* dota_broadcastmessages.pb-c.h */,
+				70F6AF041D7CA95F004DCA38 /* dota_client_enums.pb-c.c */,
+				70F6AF051D7CA95F004DCA38 /* dota_client_enums.pb-c.h */,
+				70F6AF061D7CA95F004DCA38 /* dota_clientmessages.pb-c.c */,
+				70F6AF071D7CA95F004DCA38 /* dota_clientmessages.pb-c.h */,
+				70F6AF081D7CA95F004DCA38 /* dota_commonmessages.pb-c.c */,
+				70F6AF091D7CA95F004DCA38 /* dota_commonmessages.pb-c.h */,
+				70F6AF0A1D7CA95F004DCA38 /* dota_gcmessages_client_chat.pb-c.c */,
+				70F6AF0B1D7CA95F004DCA38 /* dota_gcmessages_client_chat.pb-c.h */,
+				70F6AF0C1D7CA95F004DCA38 /* dota_gcmessages_client_fantasy.pb-c.c */,
+				70F6AF0D1D7CA95F004DCA38 /* dota_gcmessages_client_fantasy.pb-c.h */,
+				70F6AF0E1D7CA95F004DCA38 /* dota_gcmessages_client_guild.pb-c.c */,
+				70F6AF0F1D7CA95F004DCA38 /* dota_gcmessages_client_guild.pb-c.h */,
+				70F6AF101D7CA95F004DCA38 /* dota_gcmessages_client_match_management.pb-c.c */,
+				70F6AF111D7CA95F004DCA38 /* dota_gcmessages_client_match_management.pb-c.h */,
+				70F6AF121D7CA95F004DCA38 /* dota_gcmessages_client_team.pb-c.c */,
+				70F6AF131D7CA95F004DCA38 /* dota_gcmessages_client_team.pb-c.h */,
+				70F6AF141D7CA95F004DCA38 /* dota_gcmessages_client_tournament.pb-c.c */,
+				70F6AF151D7CA95F004DCA38 /* dota_gcmessages_client_tournament.pb-c.h */,
+				70F6AF161D7CA95F004DCA38 /* dota_gcmessages_client_watch.pb-c.c */,
+				70F6AF171D7CA95F004DCA38 /* dota_gcmessages_client_watch.pb-c.h */,
+				70F6AF181D7CA95F004DCA38 /* dota_gcmessages_client.pb-c.c */,
+				70F6AF191D7CA95F004DCA38 /* dota_gcmessages_client.pb-c.h */,
+				70F6AF1A1D7CA95F004DCA38 /* dota_gcmessages_common_match_management.pb-c.c */,
+				70F6AF1B1D7CA95F004DCA38 /* dota_gcmessages_common_match_management.pb-c.h */,
+				70F6AF1C1D7CA95F004DCA38 /* dota_gcmessages_common.pb-c.c */,
+				70F6AF1D1D7CA95F004DCA38 /* dota_gcmessages_common.pb-c.h */,
+				70F6AF1E1D7CA95F004DCA38 /* dota_gcmessages_msgid.pb-c.c */,
+				70F6AF1F1D7CA95F004DCA38 /* dota_gcmessages_msgid.pb-c.h */,
+				70F6AF201D7CA95F004DCA38 /* dota_gcmessages_server.pb-c.c */,
+				70F6AF211D7CA95F004DCA38 /* dota_gcmessages_server.pb-c.h */,
+				70F6AF221D7CA95F004DCA38 /* dota_match_metadata.pb-c.c */,
+				70F6AF231D7CA95F004DCA38 /* dota_match_metadata.pb-c.h */,
+				70F6AF241D7CA95F004DCA38 /* dota_modifiers.pb-c.c */,
+				70F6AF251D7CA95F004DCA38 /* dota_modifiers.pb-c.h */,
+				70F6AF261D7CA95F004DCA38 /* dota_shared_enums.pb-c.c */,
+				70F6AF271D7CA95F004DCA38 /* dota_shared_enums.pb-c.h */,
+				70F6AF281D7CA95F004DCA38 /* dota_usermessages.pb-c.c */,
+				70F6AF291D7CA95F004DCA38 /* dota_usermessages.pb-c.h */,
+				70F6AF2A1D7CA95F004DCA38 /* econ_gcmessages.pb-c.c */,
+				70F6AF2B1D7CA95F004DCA38 /* econ_gcmessages.pb-c.h */,
+				70F6AF2C1D7CA95F004DCA38 /* econ_shared_enums.pb-c.c */,
+				70F6AF2D1D7CA95F004DCA38 /* econ_shared_enums.pb-c.h */,
+				70F6AF2E1D7CA95F004DCA38 /* gameevents.pb-c.c */,
+				70F6AF2F1D7CA95F004DCA38 /* gameevents.pb-c.h */,
+				70F6AF301D7CA95F004DCA38 /* gametoolevents.pb-c.c */,
+				70F6AF311D7CA95F004DCA38 /* gametoolevents.pb-c.h */,
+				70F6AF321D7CA95F004DCA38 /* gcsdk_gcmessages.pb-c.c */,
+				70F6AF331D7CA95F004DCA38 /* gcsdk_gcmessages.pb-c.h */,
+				70F6AF341D7CA95F004DCA38 /* gcsystemmsgs.pb-c.c */,
+				70F6AF351D7CA95F004DCA38 /* gcsystemmsgs.pb-c.h */,
+				70F6AF361D7CA95F004DCA38 /* netmessages.pb-c.c */,
+				70F6AF371D7CA95F004DCA38 /* netmessages.pb-c.h */,
+				70F6AF381D7CA95F004DCA38 /* network_connection.pb-c.c */,
+				70F6AF391D7CA95F004DCA38 /* network_connection.pb-c.h */,
+				70F6AF3A1D7CA95F004DCA38 /* networkbasetypes.pb-c.c */,
+				70F6AF3B1D7CA95F004DCA38 /* networkbasetypes.pb-c.h */,
+				70F6AF3C1D7CA95F004DCA38 /* networksystem_protomessages.pb-c.c */,
+				70F6AF3D1D7CA95F004DCA38 /* networksystem_protomessages.pb-c.h */,
+				70F6AF401D7CA95F004DCA38 /* steamdatagram_messages.pb-c.c */,
+				70F6AF411D7CA95F004DCA38 /* steamdatagram_messages.pb-c.h */,
+				70F6AF421D7CA95F004DCA38 /* steammessages_cloud.steamworkssdk.pb-c.c */,
+				70F6AF431D7CA95F004DCA38 /* steammessages_cloud.steamworkssdk.pb-c.h */,
+				70F6AF441D7CA95F004DCA38 /* steammessages_oauth.steamworkssdk.pb-c.c */,
+				70F6AF451D7CA95F004DCA38 /* steammessages_oauth.steamworkssdk.pb-c.h */,
+				70F6AF461D7CA95F004DCA38 /* steammessages_publishedfile.steamworkssdk.pb-c.c */,
+				70F6AF471D7CA95F004DCA38 /* steammessages_publishedfile.steamworkssdk.pb-c.h */,
+				70F6AF481D7CA95F004DCA38 /* steammessages_unified_base.steamworkssdk.pb-c.c */,
+				70F6AF491D7CA95F004DCA38 /* steammessages_unified_base.steamworkssdk.pb-c.h */,
+				70F6AF4A1D7CA95F004DCA38 /* steammessages.pb-c.c */,
+				70F6AF4B1D7CA95F004DCA38 /* steammessages.pb-c.h */,
+				70F6AF4E1D7CA95F004DCA38 /* usermessages.pb-c.c */,
+				70F6AF4F1D7CA95F004DCA38 /* usermessages.pb-c.h */,
+			);
+			name = protos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,10 +389,54 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70F6AF781D7CA95F004DCA38 /* steammessages_publishedfile.steamworkssdk.pb-c.c in Sources */,
+				70F6AF501D7CA95F004DCA38 /* base_gcmessages.pb-c.c in Sources */,
+				70F6AF591D7CA95F004DCA38 /* dota_commonmessages.pb-c.c in Sources */,
+				70F6AF5B1D7CA95F004DCA38 /* dota_gcmessages_client_fantasy.pb-c.c in Sources */,
+				70F6AF761D7CA95F004DCA38 /* steammessages_cloud.steamworkssdk.pb-c.c in Sources */,
+				70F6AF651D7CA95F004DCA38 /* dota_gcmessages_server.pb-c.c in Sources */,
 				70A927A71C1C499B00B773B2 /* utils.c in Sources */,
+				70F6AF6F1D7CA95F004DCA38 /* gcsystemmsgs.pb-c.c in Sources */,
+				70F6AF6A1D7CA95F004DCA38 /* econ_gcmessages.pb-c.c in Sources */,
+				70F6AF701D7CA95F004DCA38 /* netmessages.pb-c.c in Sources */,
+				70F6AF521D7CA95F004DCA38 /* clientmessages.pb-c.c in Sources */,
 				708E73961C171DDF006FF456 /* main.c in Sources */,
+				70F6AF601D7CA95F004DCA38 /* dota_gcmessages_client_watch.pb-c.c in Sources */,
+				70F6AF581D7CA95F004DCA38 /* dota_clientmessages.pb-c.c in Sources */,
+				70F6AF821D7CAB5B004DCA38 /* protobuf-c.c in Sources */,
+				70F6AF7A1D7CA95F004DCA38 /* steammessages.pb-c.c in Sources */,
+				70F6AF561D7CA95F004DCA38 /* dota_broadcastmessages.pb-c.c in Sources */,
+				70F6AF6E1D7CA95F004DCA38 /* gcsdk_gcmessages.pb-c.c in Sources */,
+				70F6AF6C1D7CA95F004DCA38 /* gameevents.pb-c.c in Sources */,
+				70F6AF711D7CA95F004DCA38 /* network_connection.pb-c.c in Sources */,
+				70F6AF5D1D7CA95F004DCA38 /* dota_gcmessages_client_match_management.pb-c.c in Sources */,
+				70F6AF731D7CA95F004DCA38 /* networksystem_protomessages.pb-c.c in Sources */,
+				70F6AF5A1D7CA95F004DCA38 /* dota_gcmessages_client_chat.pb-c.c in Sources */,
 				70A927A41C1C481A00B773B2 /* pcapFuncs.c in Sources */,
+				70F6AF531D7CA95F004DCA38 /* connectionless_netmessages.pb-c.c in Sources */,
+				70F6AF5F1D7CA95F004DCA38 /* dota_gcmessages_client_tournament.pb-c.c in Sources */,
+				70F6AF791D7CA95F004DCA38 /* steammessages_unified_base.steamworkssdk.pb-c.c in Sources */,
+				70F6AF661D7CA95F004DCA38 /* dota_match_metadata.pb-c.c in Sources */,
 				70994B401C1C5DB7006B092A /* sniffer.c in Sources */,
+				70F6AF691D7CA95F004DCA38 /* dota_usermessages.pb-c.c in Sources */,
+				70F6AF751D7CA95F004DCA38 /* steamdatagram_messages.pb-c.c in Sources */,
+				70F6AF721D7CA95F004DCA38 /* networkbasetypes.pb-c.c in Sources */,
+				70F6AF631D7CA95F004DCA38 /* dota_gcmessages_common.pb-c.c in Sources */,
+				70F6AF621D7CA95F004DCA38 /* dota_gcmessages_common_match_management.pb-c.c in Sources */,
+				70F6AF7C1D7CA95F004DCA38 /* usermessages.pb-c.c in Sources */,
+				70F6AF671D7CA95F004DCA38 /* dota_modifiers.pb-c.c in Sources */,
+				70F6AF5C1D7CA95F004DCA38 /* dota_gcmessages_client_guild.pb-c.c in Sources */,
+				70F6AF541D7CA95F004DCA38 /* demo.pb-c.c in Sources */,
+				70F6AF511D7CA95F004DCA38 /* c_peer2peer_netmessages.pb-c.c in Sources */,
+				70F6AF771D7CA95F004DCA38 /* steammessages_oauth.steamworkssdk.pb-c.c in Sources */,
+				70F6AF571D7CA95F004DCA38 /* dota_client_enums.pb-c.c in Sources */,
+				70F6AF611D7CA95F004DCA38 /* dota_gcmessages_client.pb-c.c in Sources */,
+				70F6AF6B1D7CA95F004DCA38 /* econ_shared_enums.pb-c.c in Sources */,
+				70F6AF6D1D7CA95F004DCA38 /* gametoolevents.pb-c.c in Sources */,
+				70F6AF641D7CA95F004DCA38 /* dota_gcmessages_msgid.pb-c.c in Sources */,
+				70F6AF551D7CA95F004DCA38 /* descriptor.pb-c.c in Sources */,
+				70F6AF681D7CA95F004DCA38 /* dota_shared_enums.pb-c.c in Sources */,
+				70F6AF5E1D7CA95F004DCA38 /* dota_gcmessages_client_team.pb-c.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -32,33 +32,37 @@ char * TimeToString(time_t time, suseconds_t microSeconds) {
     return timeStampString;
 }
 
-void ConfigureStreams(const char * argv0, ErrorOutput eo, ProgramOutput po) {
+void ConfigureStreams(const char * argv0, ProgramLog pl, ProgramOutput po) {
     char path[256];
     //Configure stderr
     setbuf(stderr, NULL);
-    switch (eo) {
-        case SupressErrors:
+    switch (pl) {
+        case NoLog:
             strcpy(path, "/dev/null");
             freopen(path, "w", stderr);
             break;
-        case ErrorsToFile:
+        case LogToFile:
             realpath(argv0, path);
-            strcat(path, "_errors.log");
+            strcat(path, "_log.txt");
             freopen(path, "w", stderr);
+            break;
+        case LogToScreen:
             break;
         default:
             break;
     }
     //Configure stdout
     switch (po) {
-        case SupressErrors:
+        case NoOutput:
             strcpy(path, "/dev/null");
             freopen(path, "w", stdout);
             break;
-        case ErrorsToFile:
+        case OutputToFile:
             realpath(argv0, path);
-            strcat(path, "_output.log");
+            strcat(path, "_output.txt");
             freopen(path, "w", stdout);
+            break;
+        case OutputToScreen:
             break;
         default:
             break;

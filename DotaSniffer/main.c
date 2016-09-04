@@ -13,15 +13,17 @@ void SetExitKey(char key) {
 int main(int argc, const char * argv[]) {
     
     SetExitKey('q');
-    ConfigureStreams(argv[0], ErrorsToConsole, ProgramOutputToFile);
+    ConfigureStreams(argv[0], LogToScreen, OutputToFile);
     
     int tryTime = 8; //Lesser starting values won't find anything anyway
     pcap_if_t * devices = GetDevices();
     char * device;
     
     while (exitKey)
-        if (device = TryFindDotaSuitableDevice(devices, tryTime))
+        if (device = TryFindDotaSuitableDevice(devices, tryTime)) {
+            fprintf(stderr, "Starting sniffing on: %s\n", device);
             Sniff(device, PCAP_DOTA_FILTER_STRING, Callback);
+        }
         else
             fprintf(stderr, "No suitable devices found. Retrying Search with extended test time: %d.\n", tryTime *= 2);
     

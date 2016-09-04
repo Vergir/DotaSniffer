@@ -28,6 +28,5 @@ typedef struct DotaPacket{
 //It sniffs on every device from 'devices' for 'testTime' seconds, and if it catches any Dota packets, it returns appropriate device
 char * TryFindDotaSuitableDevice(pcap_if_t * devices, int testTime);
 void Callback(u_char * user, const struct pcap_pkthdr * header, const u_char * packet);
-void ConfigureSettings();
 
 #endif
